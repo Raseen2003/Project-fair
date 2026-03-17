@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import landingimg from '../assets/landingimg.webp'
+import landingimg from '../assets/landingimgnew.webp'
 import ProjectCard from '../components/ProjectCard'
 import { Card } from 'react-bootstrap'
 import { homeProjectsAPI } from '../services/allAPI'

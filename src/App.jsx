@@ -1,12 +1,27 @@
 
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Home from './pages/Home'
+import Dashboard from './pages/Dashboard'
+import Projects from './pages/Projects'
+import Auth from './pages/Auth'
+import Footer from './components/Footer'
+import Pnf from './pages/Pnf'
 
 function App() {
   
 
   return (
     <>
-      <h1>Project-fair</h1>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/login' element={<Auth/>}/>
+        <Route path='/register' element={<Auth insideRegister={true}/>}/>
+        <Route path='/Dashboard' element={<Dashboard/>}/>
+        <Route path='/Projects' element={<Projects/>}/>
+        <Route path='/*' element={<Pnf/>}/>
+      </Routes>
+      <Footer/>
     </>
   )
 }

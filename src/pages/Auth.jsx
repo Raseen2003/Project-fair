@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import loginImg from '../assets/login.Webp'
+import loginImg from '../assets/login.webp'
 import { FloatingLabel, Form,Spinner } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
 import { loginAPI, registerAPI } from '../services/allAPI'
